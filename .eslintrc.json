@@ -12,6 +12,7 @@
   "rules": {
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
     "import/order": ["error", {
       "alphabetize": { "order": "asc", "caseInsensitive": true },
       "groups": ["builtin", "external", "parent", "internal", "sibling", "index"],
