@@ -5,11 +5,13 @@
     "node": "^20.12.2",
     "npm": "^10.5.0"
   },
-  "type": "module",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brinstart/planning-poker-back.git"
+  },
   "author": "",
-  "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "start": "nest start",
