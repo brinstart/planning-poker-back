@@ -11,7 +11,13 @@
   },
   "rules": {
     "@typescript-eslint/prefer-nullish-coalescing": "off",
-    "@typescript-eslint/strict-boolean-expressions": "off"
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "import/order": ["error", {
+      "alphabetize": { "order": "asc", "caseInsensitive": true },
+      "groups": ["builtin", "external", "parent", "internal", "sibling", "index"],
+      "newlines-between": "always",
+      "pathGroups": [{ "pattern": "@/common/**", "group": "parent" }, { "pattern": "@/**", "group": "internal" }]
+    }]
   },
   "ignorePatterns": [
     "coverage",
