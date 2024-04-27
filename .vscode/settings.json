@@ -1,0 +1,11 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "cSpell.words": [
+    "brinstart",
+    "lcov",
+    "nestjs",
+    "unplugin"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "standard-with-typescript"
+  ],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "@typescript-eslint/prefer-nullish-coalescing": "off",
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "import/order": ["error", {
+      "alphabetize": { "order": "asc", "caseInsensitive": true },
+      "groups": ["builtin", "external", "parent", "internal", "sibling", "index"],
+      "newlines-between": "always",
+      "pathGroups": [{ "pattern": "@/common/**", "group": "parent" }, { "pattern": "@/**", "group": "internal" }]
+    }]
+  },
+  "overrides": [{
+    "files": ["main.ts"],
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-floating-promises": "off"
+    }
+  }],
+  "ignorePatterns": [
+    "coverage",
+    "dist",
+    "node_modules"
+  ]
+}
