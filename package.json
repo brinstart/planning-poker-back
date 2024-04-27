@@ -10,8 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/brinstart/planning-poker-back.git"
   },
-  "author": "",
+  "author": "brinstart",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brinstart/planning-poker-back/issues"
+  },
+  "homepage": "https://github.com/brinstart/planning-poker-back#readme",
   "scripts": {
     "build": "nest build",
     "start": "nest start",
