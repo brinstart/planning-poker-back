@@ -20,6 +20,13 @@
       "pathGroups": [{ "pattern": "@/common/**", "group": "parent" }, { "pattern": "@/**", "group": "internal" }]
     }]
   },
+  "overrides": [{
+    "files": ["main.ts"],
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-floating-promises": "off"
+    }
+  }],
   "ignorePatterns": [
     "coverage",
     "dist",
