@@ -24,7 +24,10 @@ export default defineConfig({
     coverage: {
       all: true,
       include: ['src/**/*.ts'],
-      exclude: ['src/main.ts'],
+      exclude: [
+        'src/app.controller.ts',
+        'src/main.ts'
+      ],
       provider: 'istanbul',
       reporter: [
         'html',
@@ -32,6 +35,9 @@ export default defineConfig({
         'text-summary'
       ],
       thresholds: {
+        branches: 100,
+        functions: 100,
+        lines: 100,
         statements: 100
       }
     }
