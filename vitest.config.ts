@@ -25,8 +25,8 @@ export default defineConfig({
       all: true,
       include: ['src/**/*.ts'],
       exclude: [
-        'src/app.controller.ts',
-        'src/main.ts'
+        'src/main.ts',
+        'src/**/*.controller.ts'
       ],
       provider: 'istanbul',
       reporter: [

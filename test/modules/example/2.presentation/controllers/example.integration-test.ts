@@ -5,7 +5,7 @@ import { type App } from 'supertest/types'
 
 import { AppModule } from '@/app.module'
 
-describe('AppController (e2e)', () => {
+describe('ExampleController (e2e)', () => {
   let app: INestApplication
 
   beforeEach(async () => {
@@ -19,7 +19,7 @@ describe('AppController (e2e)', () => {
 
   it('/ (GET)', () => {
     return request(app.getHttpServer() as App)
-      .get('/')
+      .get('/example/')
       .expect(200)
       .expect('Hello World!')
   })
